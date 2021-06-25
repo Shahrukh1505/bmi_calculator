@@ -10,7 +10,7 @@ The BMI is defined as the body mass divided by the square of the body height, an
 1. Linear layout (orientation = vertical) used.
 2. Used EditText views for letting the user enter weight and height values.
 3. Used a Button view for calculating BMI.
-4. A # TextView is displayed on the user interface letting the user know its BMI value. 
+4. A TextView is displayed on the user interface letting the user know its BMI value. 
 
 
 # Formula Used
