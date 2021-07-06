@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +14,7 @@ public class MainActivity extends AppCompatActivity {
  EditText weight;
  TextView result;
  Button button;
+ LinearLayout linearLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,15 +23,41 @@ public class MainActivity extends AppCompatActivity {
         weight = (EditText)findViewById(R.id.weight);
         height = (EditText)findViewById(R.id.height);
         result = (TextView)findViewById(R.id.result);
+        linearLayout = findViewById(R.id.linearLayout);
 button = (Button)findViewById(R.id.calc);
 button.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
+
         calculateBMI(button);
+        int a = (int)(Math.random()*10)/2;
+        if(a == 0){
+            linearLayout.setBackgroundResource(R.color.white);
+        }
+        else if(a == 1){
+            linearLayout.setBackgroundResource(R.color.blue);
+        }
+        else if(a == 2){
+            linearLayout.setBackgroundResource(R.color.purple);
+        }
+        else if(a == 3){
+            linearLayout.setBackgroundResource(R.color.burgundy);
+        }
+        else if(a == 4){
+            linearLayout.setBackgroundResource(R.color.mimosa);
+        }
+        else{
+            linearLayout.setBackgroundResource(R.color.brown);
+        }
     }
+
+
+
+
 });
 
     }
+
     public void calculateBMI(View v){
         String heightStr = height.getText().toString();
         String weightStr = weight.getText().toString();
