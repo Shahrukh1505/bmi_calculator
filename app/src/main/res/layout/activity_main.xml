@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/linearLayout"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,6 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/weight"
+        android:textColor="@color/black"
+        android:textStyle="bold"
         android:textSize="30sp"
         android:layout_marginTop="60dp"
         android:textAlignment="center"
@@ -34,6 +37,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/height"
+        android:textStyle="bold"
+        android:textColor="@color/black"
         android:textSize="30sp"
         android:layout_marginTop="40dp"
         android:textAlignment="center"
@@ -55,6 +60,7 @@
     android:layout_width="125dp"
     android:layout_height="60dp"
     android:layout_marginTop="40dp"
+    android:backgroundTint="@color/bright"
     android:text="@string/bmi"
     android:gravity="center_horizontal"
     android:layout_marginLeft="143dp"
@@ -67,5 +73,7 @@
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
         android:layout_marginTop="25dp"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"/>
 </LinearLayout>
